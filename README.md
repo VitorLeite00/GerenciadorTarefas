@@ -1,24 +1,66 @@
 # ✅ Gerenciador de Tarefas
 
-Este é um projeto simples de um Gerenciador de Tarefas, criado com o objetivo de aplicar os conhecimentos. A aplicação permite criar, visualizar, editar e excluir tarefas(CRUD), com persistência de dados em um banco de dados local.
+Este é um projeto simples e funcional de um **Gerenciador de Tarefas**, desenvolvido com **Flask (Python)**. A aplicação permite **criar, visualizar, editar, concluir e excluir tarefas** (CRUD), com persistência de dados via **SQLite**.
+
+---
 
 ## 🎯 Objetivo da Aplicação
 
-O objetivo da aplicação é auxiliar o usuário no gerenciamento de tarefas diárias, oferecendo uma interface simples para adicionar, editar, marcar como concluída ou remover tarefas. Este projeto foi desenvolvido com foco no aprendizado e prática de tecnologias, especialmente no desenvolvimento web com Python.
+O objetivo principal é auxiliar o usuário no **gerenciamento de tarefas diárias**, fornecendo uma interface web intuitiva para:
+
+- Adicionar novas tarefas
+- Definir **data de início**, **data de término** e **observações**
+- Marcar como concluída
+- Editar ou excluir tarefas
+
+Esse projeto também serve como prática para conceitos de **desenvolvimento web, código limpo, banco de dados** e **versionamento com Git/GitHub**.
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Python 3** – Linguagem principal do projeto
-- **Flask** – Framework web utilizado para criar rotas e páginas
-- **Flask-SQLAlchemy** – ORM para integração com banco de dados
-- **SQLite** – Banco de dados leve e fácil de usar
-- **HTML e CSS** – Para a criação das páginas e estilo visual
-- **Visual Studio Code** – Editor de código-fonte
+| Tecnologia           | Finalidade                                 |
+|----------------------|--------------------------------------------|
+| **Python 3.x**       | Linguagem principal                        |
+| **Flask**            | Framework web                              |
+| **Flask-WTF**        | Manipulação de formulários com validação  |
+| **Flask-SQLAlchemy** | ORM para comunicação com o banco de dados |
+| **SQLite**           | Banco de dados relacional local            |
+| **HTML5 + CSS3**     | Estrutura e estilo da interface            |
+| **Visual Studio Code** | Editor de código recomendado              |
 
-## 🚀 Funcionalidades
+---
 
-- ✅ Adicionar nova tarefa  
-- 📝 Editar tarefa existente  
-- ✅ Marcar tarefa como concluída  
-- ❌ Excluir tarefa  
-- 📋 Listar todas as tarefas cadastradas
+## 📦 Instalação e Execução
+
+### ✅ Pré-requisitos
+
+- Python 3 instalado
+- Git instalado (opcional, mas recomendado)
+- Ambiente virtual (recomendado)
+
+### 🔧 Passos para rodar localmente
+
+Bash / Terminal
+# Clone o repositório
+git clone https://github.com/VitorLeite00/GerenciadorTarefas.git
+cd GerenciadorTarefas
+
+# Crie e ative o ambiente virtual
+python -m venv venv
+venv\Scripts\activate  # Windows
+# ou
+source venv/bin/activate  # Linux/Mac
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute o projeto
+python app.py
+
+Após isso, acesse no navegador: http://127.0.0.1:5000
+
+# Como rodar os testes
+Bash / Terminal 
+Com o ambiente virtual ativado
+python test_app.py
