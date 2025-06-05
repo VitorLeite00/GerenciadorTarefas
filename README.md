@@ -64,3 +64,5 @@ Após isso, acesse no navegador: http://127.0.0.1:5000
 Bash / Terminal 
 Com o ambiente virtual ativado
 python test_app.py
+
+# Criado e desenvolvido por Vitor Hugo Gabriel Lopes Leite
